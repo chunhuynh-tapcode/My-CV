@@ -9,6 +9,7 @@
 .introduce-left {
     display: flex;
     flex-direction: column;
+    flex: 1.7;
 }
 
 .top {
@@ -21,7 +22,7 @@
     justify-content: end;
     border: var(--border);
     border-radius: var(--border-radius);
-    padding: 6px 24px
+    padding: 6px 24px;
 }
 
 .name {
@@ -32,9 +33,105 @@
     line-height: 1;
 }
 
+.top-avatar {
+    width: 284px;
+    height: 100%;
+}
+
 .avatar {
-    width: 400px;
+    width: 100%;
     height: 100%;
     border-radius: var(--border-radius);
     margin: 0 8px;
+}
+
+.bottom {
+    display: flex;
+    margin-top: var(--margin-top);
+}
+
+.about-me {
+    flex: 1.5;
+    padding: 8px 24px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+.about-me-text {
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+.get-in-touch-wrapper {
+    display: block;
+    flex: 1;
+    margin: 0 8px;
+    :hover {
+        cursor: pointer;
+        background-color: #000;
+        color: #f4f4f4;
+    }
+}
+
+.get-in-touch {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 24px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    color: #000;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.get-in-touch-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    font-size: 3rem;
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+
+.email-me {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.introduce-right {
+    padding: 8px 24px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    flex: 1;
+}
+
+.introduce-right-title {
+    border-bottom: var(--border);
+}
+
+.experiences-list {
+    margin-top: var(--margin-top);
+}
+
+.experience-wrapper {
+    margin-bottom: var(--margin-top);
+}
+
+.job-name {
+    font-size: 2rem;
+    font-weight: 650;
+}
+
+.job-time {
+    font-size: 1.2rem;
+}
+
+.more-abt-job {
+    opacity: 0.9;
+    margin-left: 20px;
 }

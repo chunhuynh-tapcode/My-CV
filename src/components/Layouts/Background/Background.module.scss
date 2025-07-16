@@ -1,0 +1,58 @@
+.background {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--margin-top);
+    gap: 8px;
+}
+
+.left {
+    flex: 1;
+}
+
+.education {
+    padding: 8px 24px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+.education-list {
+    margin-top: var(--margin-top);
+    padding: 8px 24px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.certificate {
+    font-size: 1.8rem;
+    font-weight: 650;
+    line-height: 1.2;
+}
+
+.time {
+    font-size: 1.2rem;
+}
+
+.right {
+    flex: 2;
+}
+
+.story-title-wrapper {
+    padding: 8px 24px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+.my-story-wrapper {
+    margin-top: var(--margin-top);
+    padding: 13px 24px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+.my-story {
+    height: 100%;
+    text-align: justify;
+}

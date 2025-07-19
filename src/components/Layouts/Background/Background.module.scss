@@ -25,6 +25,19 @@
     gap: 6px;
 }
 
+.education-wrapper {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    text-decoration: none;
+    color: var(--text-color);
+
+    :hover {
+        text-decoration: underline;
+        opacity: 0.8;
+    }
+}
+
 .certificate {
     font-size: 1.8rem;
     font-weight: 650;

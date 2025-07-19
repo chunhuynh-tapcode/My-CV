@@ -11,25 +11,25 @@ const cx = classNames.bind(styles);
 
 function Introduce() {
     const [ref, inView] = useInView({
-        threshold: 0.2,  // Bao nhiêu phần trăm phần tử phải hiển thị thì mới kích hoạt
-        triggerOnce: true, // Chỉ chạy 1 lần
+        threshold: 0.2,
+        triggerOnce: true
     });
 
     const fadeInRightProps = useSpring({
-        from: { opacity: 0, transform: 'translateX(100px)' }, // bắt đầu bên phải
+        from: { opacity: 0, transform: 'translateX(100px)' },
         to: { 
             opacity: inView ? 1 : 0,
             transform: inView ? 'translateX(0px)' : 'translateX(100px)' 
-        },     // dịch về vị trí ban đầu
-        config: { tension: 200, friction: 20 },                // chỉnh độ mượt
+        },   
+        config: { tension: 200, friction: 20 }
     });
     const fadeInLeftProps = useSpring({
-        from: { opacity: 0, transform: 'translateX(-100px)' }, // bắt đầu bên phải
+        from: { opacity: 0, transform: 'translateX(-100px)' }, 
         to: { 
             opacity: inView ? 1 : 0,
             transform: inView ? 'translateX(0px)' : 'translateX(-100px)' 
-        },     // dịch về vị trí ban đầu
-        config: { tension: 200, friction: 20 },                // chỉnh độ mượt
+        },     
+        config: { tension: 200, friction: 20 }
     });
 
     return ( 

@@ -1,8 +1,15 @@
+@import "../../../components/GlobalStyles/variables";
+
 .products {
     display: flex;
     flex-direction: column;
-    gap: 8px; /* khoảng cách giữa 2 cột */
+    gap: 8px;
     margin-top: var(--margin-top);
+
+    @include respond(phone) {
+        width: 400px;
+        margin: 12px auto;
+    }
 }
 
 .top {
@@ -21,6 +28,10 @@
     display: grid;
     gap: 8px;
     grid-template-columns: repeat(2, minmax(100px, 1fr));
+
+    @include respond(phone) {
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+    }
 }
 
 .product {

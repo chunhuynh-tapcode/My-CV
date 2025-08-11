@@ -1,5 +1,13 @@
+@import "../../../components/GlobalStyles/variables";
+
 .header {
     border: var(--border);
     border-radius: var(--border-radius);
     padding: 8px 24px;
+
+    @include respond(phone) {
+        text-align: center;
+        width: 400px;
+        margin: 0 auto;
+    }
 }

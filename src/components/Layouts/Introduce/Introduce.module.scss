@@ -1,9 +1,14 @@
+@import "../../../components/GlobalStyles/variables";
+
 .introduce {
     display: flex;
     margin-top: var(--margin-top);
-    // border: var(--border);
-    // border-radius: var(--border-radius);
-    // padding: 6px 24px
+
+    @include respond(phone) {
+        flex-direction: column;
+        width: 400px;
+        margin: 12px auto;
+    }
 }
 
 .introduce-left {
@@ -14,6 +19,10 @@
 
 .top {
     display: flex;
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
 }
 
 .top-name {
@@ -23,6 +32,11 @@
     border: var(--border);
     border-radius: var(--border-radius);
     padding: 6px 24px;
+
+    @include respond(phone) {
+        padding: 12px 24px;
+
+    }
 }
 
 .name {
@@ -31,11 +45,21 @@
     font-size: 6rem;
     font-weight: 700;
     line-height: 1;
+
+    @include respond(phone) {
+        font-size: 5rem;
+        line-height: 1.1;
+    }
 }
 
 .top-avatar {
     width: 284px;
     height: 100%;
+
+    @include respond(phone) {
+        width: 100%;
+        margin-top: 8px;
+    }
 }
 
 .avatar {
@@ -43,11 +67,20 @@
     height: 100%;
     border-radius: var(--border-radius);
     margin: 0 8px;
+
+    @include respond(phone) {
+        margin: 0;
+    }
 }
 
 .bottom {
     display: flex;
     margin-top: var(--margin-top);
+
+    @include respond(phone) {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 
 .about-me {
@@ -66,10 +99,15 @@
     display: block;
     flex: 1;
     margin: 0 8px;
+
     :hover {
         cursor: pointer;
         background-color: #000;
         color: #f4f4f4;
+    }
+
+    @include respond(phone) {
+        margin: 0;
     }
 }
 
@@ -108,10 +146,18 @@
     border: var(--border);
     border-radius: var(--border-radius);
     flex: 1;
+
+    @include respond(phone) {
+        margin-top: 8px;
+    }
 }
 
 .introduce-right-title {
     border-bottom: var(--border);
+
+    @include respond(phone) {
+        text-align: center;
+    }
 }
 
 .experiences-list {
@@ -123,7 +169,7 @@
 }
 
 .job-name {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 650;
 }
 

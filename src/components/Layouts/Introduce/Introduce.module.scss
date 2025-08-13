@@ -168,9 +168,14 @@
     margin-bottom: var(--margin-top);
 }
 
+.job-company {
+    font-size: 2rem;
+    font-weight: 650;
+}
+
 .job-name {
     font-size: 1.6rem;
-    font-weight: 650;
+    font-weight: 600;
 }
 
 .job-time {
@@ -180,4 +185,8 @@
 .more-abt-job {
     opacity: 0.9;
     margin-left: 20px;
+}
+
+.divhunt {
+    font-style: italic;
 }

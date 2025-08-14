@@ -7,6 +7,8 @@ import React from "react";
 import { useSpring, animated } from "@react-spring/web";
 import { useInView } from "react-intersection-observer";
 
+import { useMediaQuery } from "react-responsive";
+
 const cx = classNames.bind(styles);
 
 function Introduce() {
@@ -15,22 +17,32 @@ function Introduce() {
     triggerOnce: true,
   });
 
-  const fadeInRightProps = useSpring({
-    from: { opacity: 0, transform: "translateX(100px)" },
-    to: {
-      opacity: inView ? 1 : 0,
-      transform: inView ? "translateX(0px)" : "translateX(100px)",
-    },
-    config: { tension: 200, friction: 20 },
-  });
-  const fadeInLeftProps = useSpring({
-    from: { opacity: 0, transform: "translateX(-100px)" },
-    to: {
-      opacity: inView ? 1 : 0,
-      transform: inView ? "translateX(0px)" : "translateX(-100px)",
-    },
-    config: { tension: 200, friction: 20 },
-  });
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
+  const fadeInLeftProps = useSpring(
+    isMobile
+      ? { opacity: 1, transform: "translateY(0px)" }
+      : {
+          from: { opacity: 0, transform: "translateX(-100px)" },
+          to: {
+            opacity: inView ? 1 : 0,
+            transform: inView ? "translateX(0px)" : "translateX(-100px)",
+          },
+          config: { tension: 200, friction: 20 },
+        }
+  );
+  const fadeInRightProps = useSpring(
+    isMobile
+      ? { opacity: 1, transform: "translateY(0px)" }
+      : {
+          from: { opacity: 0, transform: "translateX(100px)" },
+          to: {
+            opacity: inView ? 1 : 0,
+            transform: inView ? "translateX(0px)" : "translateX(100px)",
+          },
+          config: { tension: 200, friction: 20 },
+        }
+  );
 
   return (
     <div className={cx("introduce")}>

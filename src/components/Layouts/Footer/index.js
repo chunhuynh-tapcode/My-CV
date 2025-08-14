@@ -13,6 +13,8 @@ import React from "react";
 import { useSpring, animated } from "@react-spring/web";
 import { useInView } from "react-intersection-observer";
 
+import { useMediaQuery } from "react-responsive";
+
 const cx = classNames.bind(styles);
 
 function Footer() {
@@ -20,14 +22,21 @@ function Footer() {
     threshold: 0.2,
     triggerOnce: true,
   });
-  const fadeInBottomProps = useSpring({
-    from: { opacity: 0, transform: "translateY(100px)" },
-    to: {
-      opacity: inView ? 1 : 0,
-      transform: inView ? "translateY(0px)" : "translateY(100px)",
-    },
-    config: { tension: 200, friction: 20 },
-  });
+
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
+  const fadeInBottomProps = useSpring(
+    isMobile
+      ? { opacity: 1, transform: "translateY(0px)" }
+      : {
+          from: { opacity: 0, transform: "translateY(100px)" },
+          to: {
+            opacity: inView ? 1 : 0,
+            transform: inView ? "translateY(0px)" : "translateY(100px)",
+          },
+          config: { tension: 200, friction: 20 },
+        }
+  );
 
   return (
     <animated.footer

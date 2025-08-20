@@ -163,6 +163,30 @@ function Products() {
             </div>
           </div>
         </animated.a>
+
+        <animated.a
+          ref={ref}
+          style={fadeInRightProps}
+          className={cx("product")}
+          href="https://clear-the-points-one.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className={cx("product-img")}
+            src="/san_pham5.png"
+            alt="clearthepoints"
+          ></img>
+          <div className={cx("overlay")}>
+            <FontAwesomeIcon className={cx("icon")} icon={faArrowRight} />
+            <div className={cx("description")}>
+              <p className={cx("description-heading")}>Clear The Points game</p>
+              <p className={cx("description-text")}>
+                A fun and interactive game built with ReactJS.
+              </p>
+            </div>
+          </div>
+        </animated.a>
       </div>
     </div>
   );

@@ -91,7 +91,7 @@ function Products() {
           ref={ref}
           style={fadeInRightProps}
           className={cx("product")}
-          href="https://bitejoy-rho.vercel.app/"
+          href="https://bitejoy-burger.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >

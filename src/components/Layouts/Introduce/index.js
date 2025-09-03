@@ -98,7 +98,7 @@ function Introduce() {
 
         <div className={cx("experiences-list")}>
           <div className={cx("experience-wrapper")}>
-            <p className={cx("job-name")}>SEO Website Frelancer</p>
+            <p className={cx("job-name")}>SEO Website Freelancer</p>
             <p className={cx("job-place")}>Da Nang - Vietnam</p>
             <p className={cx("job-time")}>2025</p>
             {/* <p className={cx('more-abt-job')}>Built responsive websites for eCommerce clients, ensuring they worked smoothly on all devices. Worked with designers to turn mockups into pixel-perfect sites and used front-end frameworks to speed up development.</p> */}

@@ -60,7 +60,11 @@ function Introduce() {
           </div>
 
           <div className={cx("top-avatar")}>
-            <img className={cx("avatar")} src="/CV_photo.jpg"></img>
+            <img
+              className={cx("avatar")}
+              alt="avatar"
+              src="/CV_photo.jpg"
+            ></img>
           </div>
         </div>
 

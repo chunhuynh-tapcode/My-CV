@@ -73,7 +73,7 @@ function Products() {
         >
           <img
             className={cx("product-img")}
-            src="/Website_img/san_pham4.png"
+            src="/website_img/san_pham4.png"
             alt="ecomdymedia"
           ></img>
           <div className={cx("overlay")}>
@@ -97,7 +97,7 @@ function Products() {
         >
           <img
             className={cx("product-img")}
-            src="/Website_img/shopee_clone.png"
+            src="/website_img/shopee_clone.png"
             alt="Shopee Clone"
           ></img>
           <div className={cx("overlay")}>
@@ -120,7 +120,7 @@ function Products() {
         >
           <img
             className={cx("product-img")}
-            src="/Website_img/san_pham3.png"
+            src="/website_img/san_pham3.png"
             alt="Bitejoy"
           ></img>
           <div className={cx("overlay")}>
@@ -145,7 +145,7 @@ function Products() {
         >
           <img
             className={cx("product-img")}
-            src="/Website_img/san_pham1.png"
+            src="/website_img/san_pham1.png"
             alt="GiveWell | Fundraising"
           ></img>
           <div className={cx("overlay")}>
@@ -170,7 +170,7 @@ function Products() {
         >
           <img
             className={cx("product-img")}
-            src="/Website_img/san_pham2.png"
+            src="/website_img/san_pham2.png"
             alt="EXSH Ticket"
           ></img>
           <div className={cx("overlay")}>
@@ -194,7 +194,7 @@ function Products() {
         >
           <img
             className={cx("product-img")}
-            src="/Website_img/san_pham5.png"
+            src="/website_img/san_pham5.png"
             alt="clearthepoints"
           ></img>
           <div className={cx("overlay")}>

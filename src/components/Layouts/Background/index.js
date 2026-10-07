@@ -27,7 +27,7 @@ function Background() {
             transform: inView ? "translateX(0px)" : "translateX(-100px)",
           },
           config: { tension: 200, friction: 20 },
-        }
+        },
   );
   const fadeInRightProps = useSpring(
     isMobile
@@ -39,7 +39,7 @@ function Background() {
             transform: inView ? "translateX(0px)" : "translateX(100px)",
           },
           config: { tension: 200, friction: 20 },
-        }
+        },
   );
 
   return (
@@ -92,18 +92,13 @@ function Background() {
         </div>
         <div className={cx("my-story-wrapper")}>
           <p className={cx("my-story")}>
-            I had worked in Marketing for 2 years and realized that this
-            industry was not for me. At that time, I was exposed to the web
-            development industry and was attracted to it. I decided to switch to
-            web programming to become a web developer. Driven by my passion for
-            creative design and commitment to delivering high-quality work, I
-            found motivation in the challenges that each project posed. Every
-            pixel, every interaction, every piece of code tells a story, and I
-            was energized by the opportunity to create experiences that are not
-            only engaging but also solve real problems. For me, switching to
-            this industry was about pushing boundaries, embracing creativity,
-            and constantly evolving to stay ahead in the ever-changing digital
-            landscape.
+            Tốt nghiệp ngành Thương mại điện tử, tôi định hình bản thân là một
+            Marketer linh hoạt, lấy dữ liệu & chuyển đổi làm trọng tâm. Tôi
+            chuyên sâu về xây dựng nội dung chuẩn SEO, thiết kế Landing Page tối
+            ưu trải nghiệm người dùng và quản lý hệ thống Social, Blog doanh
+            nghiệp. Tôi không ngừng cập nhật thêm những kiến thức và kĩ năng về
+            phân tích dữ liệu, thiết kế landing page giúp tôi nâng cao thêm kĩ
+            năng trong công việc và đầy sự linh hoạt.
           </p>
         </div>
       </animated.div>

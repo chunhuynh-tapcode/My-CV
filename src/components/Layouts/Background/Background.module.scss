@@ -61,6 +61,8 @@
 }
 
 .right {
+    display: flex;
+    flex-direction: column;
     flex: 2;
 
     @include respond(phone) {
@@ -79,6 +81,10 @@
     padding: 13px 24px;
     border: var(--border);
     border-radius: var(--border-radius);
+    flex: 1;                /* Tự động kéo giãn lấp đầy chiều cao còn thừa */
+    display: flex;          /* Giúp căn chỉnh nội dung bên trong nếu cần */
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 .my-story {

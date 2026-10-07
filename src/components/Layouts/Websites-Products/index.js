@@ -29,7 +29,7 @@ function Products() {
             transform: inView ? "translateX(0px)" : "translateX(-100px)",
           },
           config: { tension: 200, friction: 20 },
-        }
+        },
   );
   const fadeInRightProps = useSpring(
     isMobile
@@ -41,7 +41,7 @@ function Products() {
             transform: inView ? "translateX(0px)" : "translateX(100px)",
           },
           config: { tension: 200, friction: 20 },
-        }
+        },
   );
   const fadeInBottomProps = useSpring(
     isMobile
@@ -53,16 +53,40 @@ function Products() {
             transform: inView ? "translateY(0px)" : "translateY(100px)",
           },
           config: { tension: 200, friction: 20 },
-        }
+        },
   );
 
   return (
     <div className={cx("products")}>
       <animated.div ref={ref} style={fadeInBottomProps} className={cx("top")}>
-        <h2 className={cx("heading")}>PRODUCTS</h2>
+        <h2 className={cx("heading")}>WEBSITE PRODUCTS</h2>
       </animated.div>
 
       <div className={cx("bottom")}>
+        <animated.a
+          ref={ref}
+          style={fadeInLeftProps}
+          className={cx("product")}
+          href="https://ecomdymediatesting.divhunt.art/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className={cx("product-img")}
+            src="/Website_img/san_pham4.png"
+            alt="ecomdymedia"
+          ></img>
+          <div className={cx("overlay")}>
+            <FontAwesomeIcon className={cx("icon")} icon={faArrowRight} />
+            <div className={cx("description")}>
+              <p className={cx("description-heading")}>Ecomdymedia</p>
+              <p className={cx("description-text")}>
+                Website chính của Ecomdymedia được xây dựng bằng Divhunt với đầy
+                đủ chức năng của một website doanh nghiệp.
+              </p>
+            </div>
+          </div>
+        </animated.a>
         <animated.a
           ref={ref}
           style={fadeInLeftProps}
@@ -73,7 +97,7 @@ function Products() {
         >
           <img
             className={cx("product-img")}
-            src="/shopee_clone.png"
+            src="/Website_img/shopee_clone.png"
             alt="Shopee Clone"
           ></img>
           <div className={cx("overlay")}>
@@ -81,12 +105,11 @@ function Products() {
             <div className={cx("description")}>
               <p className={cx("description-heading")}>Shopee</p>
               <p className={cx("description-text")}>
-                Shopee product page made with pure HTML/CSS and JS.
+                Trang sản phẩm Shopee được làm bằng HTML/CSS và JS thuần.
               </p>
             </div>
           </div>
         </animated.a>
-
         <animated.a
           ref={ref}
           style={fadeInRightProps}
@@ -97,7 +120,7 @@ function Products() {
         >
           <img
             className={cx("product-img")}
-            src="/san_pham3.png"
+            src="/Website_img/san_pham3.png"
             alt="Bitejoy"
           ></img>
           <div className={cx("overlay")}>
@@ -105,14 +128,13 @@ function Products() {
             <div className={cx("description")}>
               <p className={cx("description-heading")}>Bitejoy</p>
               <p className={cx("description-text")}>
-                A website for a fastfood business, with full functionality of
-                Menu, shopping cart, ordering, blog page, and more... - made
-                with ReactJS
+                Một website cho một doanh nghiệp thức ăn nhanh, với đầy đủ chức
+                năng của Menu, giỏ hàng, đặt hàng, trang blog và nhiều hơn
+                nữa... - được làm bằng ReactJS
               </p>
             </div>
           </div>
         </animated.a>
-
         <animated.a
           ref={ref}
           style={fadeInLeftProps}
@@ -123,7 +145,7 @@ function Products() {
         >
           <img
             className={cx("product-img")}
-            src="/san_pham1.png"
+            src="/Website_img/san_pham1.png"
             alt="GiveWell | Fundraising"
           ></img>
           <div className={cx("overlay")}>
@@ -133,12 +155,11 @@ function Products() {
                 GiveWell | Fundraising
               </p>
               <p className={cx("description-text")}>
-                Givewell Charity Fundraising Website Made with ReactJS.
+                Givewell Charity Fundraising Website được làm bằng ReactJS.
               </p>
             </div>
           </div>
         </animated.a>
-
         <animated.a
           ref={ref}
           style={fadeInRightProps}
@@ -149,7 +170,7 @@ function Products() {
         >
           <img
             className={cx("product-img")}
-            src="/san_pham2.png"
+            src="/Website_img/san_pham2.png"
             alt="EXSH Ticket"
           ></img>
           <div className={cx("overlay")}>
@@ -157,13 +178,12 @@ function Products() {
             <div className={cx("description")}>
               <p className={cx("description-heading")}>EXSH Ticket</p>
               <p className={cx("description-text")}>
-                Em Xinh Say Hi concert ticket booking mockup website made with
-                HTML/CSS and JS.
+                Trang web đặt vé concert Em Xinh Say Hi được làm bằng HTML/CSS
+                và JS.
               </p>
             </div>
           </div>
         </animated.a>
-
         <animated.a
           ref={ref}
           style={fadeInRightProps}
@@ -174,7 +194,7 @@ function Products() {
         >
           <img
             className={cx("product-img")}
-            src="/san_pham5.png"
+            src="/Website_img/san_pham5.png"
             alt="clearthepoints"
           ></img>
           <div className={cx("overlay")}>
@@ -182,7 +202,7 @@ function Products() {
             <div className={cx("description")}>
               <p className={cx("description-heading")}>Clear The Points game</p>
               <p className={cx("description-text")}>
-                A fun and interactive game built with ReactJS.
+                Một game nhỏ cho người dùng được xây dựng bằng ReactJS.
               </p>
             </div>
           </div>

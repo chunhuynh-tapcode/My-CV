@@ -29,7 +29,7 @@ function Introduce() {
             transform: inView ? "translateX(0px)" : "translateX(-100px)",
           },
           config: { tension: 200, friction: 20 },
-        }
+        },
   );
   const fadeInRightProps = useSpring(
     isMobile
@@ -41,7 +41,7 @@ function Introduce() {
             transform: inView ? "translateX(0px)" : "translateX(100px)",
           },
           config: { tension: 200, friction: 20 },
-        }
+        },
   );
 
   return (
@@ -67,19 +67,18 @@ function Introduce() {
         <div className={cx("bottom")}>
           <div className={cx("about-me")}>
             <p className={cx("about-me-text")}>
-              Hi, I am Huynh Dinh Trung, a web developer from Da Nang. I aim to
-              build clean, usable websites with a touch of creativity - always
-              focusing on great user experience. I am looking forward to
-              learning and working in a professional environment where I can
-              further develop my skills in the industry and contribute to the
-              business.
+              Với vài năm kinh nghiệm trong lĩnh vực Marketing, tôi có nhiều
+              kinh nghiệm trong việc xây dựng nội dung chuẩn SEO, Facebook Ads,
+              thiết kế landing page và quản lý blog của công ty. Tôi tự tin là
+              người không ngại thay đổi và luôn sẵn sàng học hỏi những điều mới
+              mẻ để hoàn thiện bản thân.
             </p>
           </div>
 
           <div className={cx("get-in-touch-wrapper")}>
             <a href="mailto:g21trung@gmail.com" className={cx("get-in-touch")}>
               <div className={cx("get-in-touch-top")}>
-                <p>Wanna get in touch?</p>
+                {/* <p>Wanna get in touch?</p> */}
                 <FontAwesomeIcon className={cx("icon")} icon={faArrowRight} />
               </div>
               <p className={cx("email-me")}>EMAIL ME</p>
@@ -92,50 +91,19 @@ function Introduce() {
         style={fadeInRightProps}
         className={cx("introduce-right")}
       >
-        <div className={cx("introduce-right-title")}>
-          <h2 className={cx("title")}>EXPERIENCE</h2>
-        </div>
-
-        <div className={cx("experiences-list")}>
-          <div className={cx("experience-wrapper")}>
-            <p className={cx("job-name")}>SEO Website Freelancer</p>
-            <p className={cx("job-place")}>Da Nang - Vietnam</p>
-            <p className={cx("job-time")}>2025</p>
-            {/* <p className={cx('more-abt-job')}>Built responsive websites for eCommerce clients, ensuring they worked smoothly on all devices. Worked with designers to turn mockups into pixel-perfect sites and used front-end frameworks to speed up development.</p> */}
-          </div>
-          <div className={cx("experience-wrapper")}>
-            <p className={cx("job-company")}>Ecomdy</p>
-            <p className={cx("job-name")}>Marketing Executive</p>
-            <p className={cx("job-place")}>Da Nang - Vietnam</p>
-            <p className={cx("job-time")}>2022-2024</p>
-            <ul className={cx("more-abt-job")}>
-              <li>Manage the Blog page on the company website.</li>
-              <li>
-                Brainstorm topics and implement articles on the Blog page and
-                Social pages.
-              </li>
-              {/* <li>Create short videos using Capcut to post on Facebook page.</li>  */}
-              <li>Manage in website design using Divhunt.</li>
-              <a>
-                <a
-                  href="https://ecomdymediatesting.divhunt.art/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={cx("divhunt")}
-                >
-                  Check out my website design by Divhunt here.
-                </a>
-              </a>
-              <li>
-                Research, create topics, build and write SEO content about real
-                estate for the company website.
-              </li>
-              <li>
-                Use Figma for basic image editing to post to Blog posts, social
-                posts, and internal company posts.
-              </li>
-            </ul>
-          </div>
+        <div className={cx("get-in-touch-wrapper2")}>
+          <a
+            href="https://drive.google.com/file/d/1lNz3MhsynTWJjPIOrsDX0EsyBRj7Ikh-/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cx("get-in-touch2")}
+          >
+            <div className={cx("get-in-touch-top2")}>
+              {/* <p>Click here to view my Experiences</p> */}
+              <FontAwesomeIcon className={cx("icon")} icon={faArrowRight} />
+            </div>
+            <p className={cx("email-me2")}>MY CV</p>
+          </a>
         </div>
       </animated.div>
     </div>
